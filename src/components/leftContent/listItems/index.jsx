@@ -1,9 +1,10 @@
 import React from 'react'
+import { ListIcon } from '../../svg'
 
 const ListItem  = ({text}) => {
   return (
     <div className='flex gap-5 mb-2 md:mb-4  w-[80%] md:w-[100%]  '>
-      <img src= '../../../../src/assets/images/icon-list.svg' alt="icon-list" />
+      <ListIcon />
         <p>{text}</p>
     </div>
   )

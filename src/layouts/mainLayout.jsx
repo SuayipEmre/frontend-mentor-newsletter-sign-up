@@ -4,6 +4,7 @@ import { useIsSubmit, useUserEmail } from '../store/features/emailInput/hooks'
 import Button from '../components/button'
 import { setIsSubmit } from '../store/features/emailInput/actions'
 import { useMediaQuery } from 'react-responsive'
+import { SuccessIcon } from '../components/svg'
 
 const MainLayout = ({ children }) => {
   const isSubmit = useIsSubmit()
@@ -21,7 +22,7 @@ const MainLayout = ({ children }) => {
             {children}
           </> :
           <div className='w-[85%] mx-12'>
-            <img src='./../src/assets/images/icon-success.svg' />
+            <SuccessIcon />
 
             <div className='my-8'>
               <h1 className='font-bold text-[30px]'>Thanks for subscribing!</h1>
