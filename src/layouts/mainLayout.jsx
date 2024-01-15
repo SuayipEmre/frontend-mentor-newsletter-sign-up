@@ -9,10 +9,10 @@ import { SuccessIcon } from '../components/svg'
 const MainLayout = ({ children }) => {
   const isSubmit = useIsSubmit()
   const usermail = useUserEmail()
-  const isMobile = useMediaQuery({ maxWidth: 700 })
+  const isMobile = useMediaQuery({ maxWidth: 1280 })
 
   return (
-    <div className={classNames('w-[375px] md:w-[1440px]  flex flex-col items-center  md:items-start md:flex-row md:py-6 md:rounded-[40px] bg-white', {
+    <div className={classNames('w-[375px] md:w-[1440px]  flex flex-col items-center  xl:items-start xl:flex-row xl:py-6 xl:rounded-[40px] bg-white', {
       'md:w-[375px] justify-center ': isSubmit,
       'justify-center': isMobile
     })}>

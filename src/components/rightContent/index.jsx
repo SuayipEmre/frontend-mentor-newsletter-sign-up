@@ -1,19 +1,17 @@
 import React from 'react'
 import { useMediaQuery } from 'react-responsive';
-import { ListIcon, SignUpDesktop, SignUpMobile, SuccessIcon } from '../svg';
+import {  SignUpDesktop, SignUpMobile} from '../svg';
 
 const RightContent = () => {
-  const isMobile = useMediaQuery({ maxWidth: 700 })
+  const isMobile = useMediaQuery({ maxWidth: 1280 })
   
   
   return (
-    <div className='w-[100%] md:w-[40%] order-1 md:order-2'>
+    <div className='w-[100%] xl:w-[40%]  flex items-center justify-center xl:block order-1 xl:order-2'>
 
-      <div className='w-[100%] md:w-[80%]'>
         {
           isMobile ?  <SignUpMobile /> : <SignUpDesktop />
         }
-      </div>
     </div>
   )
 }

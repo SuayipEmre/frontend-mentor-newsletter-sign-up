@@ -7,7 +7,7 @@ const LeftContent = () => {
 
 
   return (
-    <div className='w-[100%]  md:w-[60%] md:mx-0  flex flex-col items-center justify-center  order-2 md:order-1  py-14'>
+    <div className='w-[100%]  md:w-[60%] md:mx-0  flex flex-col items-center justify-center  order-2 xl:order-1  py-14'>
 
       <div className='flex flex-col items-center w-full md:w-[400px] '>
         
